@@ -1,4 +1,5 @@
 #include <iostream> // instruction to compiler include the standard Steram I/O
+#include "common/square.h" // Include my custom class
 
 using namespace std; // makes names from std visible without std::
 
@@ -18,7 +19,7 @@ int main() {
     // Types, variables and Arithmetic
     
     // int  [ ] [ ] [ ] [ ]
-    int value1 = 'a';
+    int value1 = 3;
     cout << "Size of integer is: " << sizeof value1 << "\n"; // always 4 byte
     
     // boolean  [ ]
@@ -40,6 +41,10 @@ int main() {
     cout << value3;
     cout << "\n";
     cout << value4;
+
+    // Reading class
+    Square square(3.14);
+    cout << "The area of the square is: " << square.getArea() << "\n";
 
     return 0;
 }
