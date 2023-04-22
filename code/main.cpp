@@ -18,14 +18,21 @@ int main() {
     // Types, variables and Arithmetic
     
     // int  [ ] [ ] [ ] [ ]
-    int value1 = 1;
-    // int  [ ]
-    bool value2 = false; // if set string, the stdout is "1", so boolean is 0 or 1
-    // int  [ ]
-    char value3 = 3; // a-Z, 1-9
-    // int  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
-    double value4 = 'a'; // Double precision floating-point number: 3.14 and 299793.0
+    int value1 = 'a';
+    cout << "Size of integer is: " << sizeof value1 << "\n"; // always 4 byte
     
+    // boolean  [ ]
+    bool value2 = false; // if set string, the stdout is "1", so boolean is 0 or 1
+    cout << "Size of boolean is: " << sizeof value2 << "\n"; // always 1 byte
+    
+    // char  [ ]
+    char value3 = 'a'; // a-Z, 1-9
+    cout << "Size of char is: " << sizeof value3 << "\n"; // always 1 byte
+    
+    // double  [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+    double value4 = 3.14; // Double precision floating-point number: 3.14 and 299793.0
+    cout << "Size of double is: " << sizeof value4 << "\n"; // always 8 byte
+
     cout << value1;
     cout << "\n";
     cout << value2;
