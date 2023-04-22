@@ -1,5 +1,7 @@
 bt-distance.xcodeproj
 .vscode
 code/main
-code/main.dSYM
 main.dSYM
+main.dSYM
+main
+cmake-build-debug
