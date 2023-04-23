@@ -11,6 +11,11 @@ void print_square(double x) {
     cout << "The name of " << x << " is " << square(x) << "\n";
 }
 
+struct Triangle {
+    double base;
+    double height;
+};
+
 int main() {
     //std::cout << "Hello"; // the operator << "put to" writes it seconds argument onto its first
     cout << "Hello \n";
@@ -46,6 +51,8 @@ int main() {
     // Reading class
     Square area = Square(3.14);
     cout << "The area of the square is: " << area.getArea() << "\n";
+    Triangle triangle = { 3.14, 3.14 };
+    cout << "The Triangle has a base of: " << triangle.base << " and a height of: " << triangle.height << "\n";
 
     return 0;
 }
