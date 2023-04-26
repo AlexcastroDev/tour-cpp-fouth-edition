@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.24)
 project(bt_distance)
-
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".dylib")
+link_directories(/usr/local/lib)
 
-add_executable(bt_distance main.cpp square.cpp square.h)
+set(SOURCES main.cpp square.cpp square.h)
+add_executable(bt_distance ${SOURCES})
+include_directories(/usr/local/include)
+target_link_libraries(bt_distance uv)
